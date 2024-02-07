@@ -24,6 +24,11 @@ const NavBar = () => {
               Who We Are
             </Link>
           </li>
+          <li className="nav-item d-inline">
+            <Link to="/contact" className="nav-link">
+              Contact Us
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

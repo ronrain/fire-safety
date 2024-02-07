@@ -8,6 +8,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 //pages
 import Details from './pages/Details/Details'
 import About from './pages/About/About'
+import ContactForm from './pages/ContactForm/ContactForm'
 
 import NavBar from './components/NavBar/NavBar'
 
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path='/details' element={<Details />} />
         <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<ContactForm />} />
       </Routes>
       {isRootPath && (
         <main className="container">

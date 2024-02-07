@@ -7,10 +7,10 @@ export const serviceData = [
 ]
 
 export const locationData =[
-  {_id: 1, location: 'Construction Sites', imageUrl: './public/construction.jpeg' },
-  {_id: 2, location: 'Corporate Buildings', imageUrl: './public/corporate.jpeg'},
-  {_id: 3, location: 'Venues', imageUrl: './public/venue.jpeg'},
-  {_id: 4, location: 'Movie Sets', imageUrl: './public/movie.png'},
-  {_id: 5, location: 'Residential', imageUrl: './public/residential.webp'},
-  {_id: 6, location: 'Hotels', imageUrl: './public/hotel.webp'}
+  {_id: 1, location: 'Construction Sites', imageUrl: './construction.jpeg' },
+  {_id: 2, location: 'Corporate Buildings', imageUrl: './corporate.jpeg'},
+  {_id: 3, location: 'Venues', imageUrl: './venue.jpeg'},
+  {_id: 4, location: 'Movie Sets', imageUrl: './movie.png'},
+  {_id: 5, location: 'Residential', imageUrl: './residential.webp'},
+  {_id: 6, location: 'Hotels', imageUrl: './hotel.webp'}
 ]

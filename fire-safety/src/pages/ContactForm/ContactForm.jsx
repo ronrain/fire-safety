@@ -24,32 +24,48 @@ const ContactForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="p-4">
-      <h1>Contact Us For Services or Employment</h1>
-      <div className="form-floating mb-3">
-        <input type="text" className="form-control" id="floatingInput" placeholder='Full Name' name="from_name" required />
-        <label for="floatingInput">Full Name</label>
-      </div>
-      <div class="form-floating mb-3">
-        <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" name='from_email' required />
-        <label for="floatingInput">Email address</label>
-      </div>
-      <div className="form-floating mb-3">
-        <input type="tel" className="form-control" id="floatingInput" placeholder='Phone Number' name="from_phone" required />
-        <label for="floatingInput">Phone Number</label>
-      </div>
-      <div className="form-floating mb-3">
-        <textarea className="form-control" id="floatingText" placeholder='Leave a Message' name="message" rows="7" required ></textarea>
-        <label for='floatingTextarea' >Message</label>
-      </div>
-      <button class="button-82-pushable" role="button">
-        <span class="button-82-shadow"></span>
-        <span class="button-82-edge"></span>
-        <span class="button-82-front text">
-          Send
-        </span>
-      </button>
-    </form>
+    <div className="container">
+  <div className="row">
+    <div className="col-md-6">
+      <img src="./fire-ext-sign.png" alt="Logo" className="navbar-logo" style={{ width: '100%', height: 'auto' }} />
+    </div>
+    <div className="col-md-6">
+      <form ref={form} onSubmit={sendEmail} className="p-4">
+        <h1>Contact Us</h1>
+        <div className="form-floating mb-3">
+          <input type="text" className="form-control d-block" id="floatingInputName" placeholder="Full Name" name="from_name" required />
+          <label htmlFor="floatingInputName">Full Name</label>
+        </div>
+        <div className="form-floating mb-3">
+          <input type="email" className="form-control d-block" id="floatingInputEmail" placeholder="name@example.com" name="from_email" required />
+          <label htmlFor="floatingInputEmail">Email address</label>
+        </div>
+        <div className="form-floating mb-3">
+          <input type="tel" className="form-control d-block" id="floatingInputPhone" placeholder="Phone Number" name="from_phone" required />
+          <label htmlFor="floatingInputPhone">Phone Number</label>
+        </div>
+        <div className="form-floating mb-3">
+          <select className="form-select d-block" id="floatingSelect" name="from_type" required >
+            <option value="">Reason for Contact</option>
+            <option value="SERVICE">Service</option>
+            <option value="EMPLOYMENT">Employment</option>
+          </select>
+          <label htmlFor="floatingSelect">Contact Type</label>
+        </div>
+        <div className="form-floating mb-3">
+          <textarea className="form-control d-block" id="floatingText" placeholder="Leave a Message" name="message" rows="7" required></textarea>
+          <label htmlFor="floatingText">Message</label>
+        </div>
+        <button className="button-82-pushable" role="button">
+          <span className="button-82-shadow"></span>
+          <span className="button-82-edge"></span>
+          <span className="button-82-front text">Send</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
   );
 };
 

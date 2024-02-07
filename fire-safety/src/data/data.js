@@ -11,5 +11,6 @@ export const locationData =[
   {_id: 2, location: 'Corporate Buildings', imageUrl: './public/corporate.jpeg'},
   {_id: 3, location: 'Venues', imageUrl: './public/venue.jpeg'},
   {_id: 4, location: 'Movie Sets', imageUrl: './public/movie.png'},
-  {_id: 5, location: 'Residential', imageUrl: './public/residential.webp'}
+  {_id: 5, location: 'Residential', imageUrl: './public/residential.webp'},
+  {_id: 6, location: 'Hotels', imageUrl: './public/hotel.webp'}
 ]

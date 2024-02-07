@@ -6,10 +6,10 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+  
     emailjs
-      .sendForm('IMPORT.META.ENV.VITE_SERVICE_ID', 'IMPORT.META.ENV.VITE_TEMPLATE_ID', form.current, {
-        publicKey: 'IMPORT.META.ENV.VITE_PUBLIC_KEY',
+      .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
+        publicKey: import.meta.env.VITE_PUBLIC_KEY,
       })
       .then(
         () => {
@@ -22,17 +22,25 @@ const ContactForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="from_name" />
-      <label>Email</label>
-      <input type="email" name="from_email" />
-      <label>Phone Number</label>
-      <input type="phone" name="from_phone" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <form ref={form} onSubmit={sendEmail} className="p-4">
+    <div className="form-floating mb-3">
+      <input type="text" className="form-control" id="floatingInput" placeholder='Full Name' name="from_name" />
+      <label for="floatingInput">Full Name</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" name='from_email' />
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div className="form-floating mb-3">
+      <input type="tel" className="form-control" id="floatingInput" placeholder='Phone Number' name="from_phone" />
+      <label for="floatingInput">Phone Number</label>
+    </div>
+    <div className="form-floating mb-3">
+      <textarea className="form-control" id="floatingText" placeholder='Leave a Message' name="message" rows="7"></textarea>
+      <label for='floatingTextarea' >Message</label>
+    </div>
+    <button type="submit" className="btn btn-primary">Send</button>
+  </form>
   );
 };
 

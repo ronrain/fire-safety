@@ -27,9 +27,15 @@ body {
   min-height: 100vh;
 }
 
-h1 {
+h1, h2, h3 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
 }
 
 button {

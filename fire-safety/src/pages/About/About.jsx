@@ -5,7 +5,7 @@ const About = () => {
     <div className="col-lg-8">
       <h1 className="display-4">Who We Are</h1>
       <p className="lead">
-        We are a fire safety company serving the tri-state area. Our expertise extends to both commercial and residential properties, including prestigious locations such as UBS Arena and Disney Headquarters in Manhattan. Our team comprises <strong>FDNY Certified Fire Guards</strong>!
+        We are a fire safety company serving the tri-state area. Our expertise extends to both commercial and residential properties, including prestigious locations such as UBS Arena and Disney Headquarters in Manhattan. We pride ourselves of having all <strong>FDNY Certified Fire Guards</strong>!
       </p>
 
       <h3 className="mt-4">Is Your Home Safe?</h3>

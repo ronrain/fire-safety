@@ -5,33 +5,38 @@ import './NavBar.css'
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <div className="d-flex align-items-center">
-          <a className="navbar-brand" href="/">
-            <img src="./logo.png" alt="Logo" className="navbar-logo" style={{ width: '70px', height: 'auto' }} />
-          </a>
-          <a href="tel:+3473927031"><strong>For Immediate Assistance Call 3473927031</strong></a>
-        </div>
-        
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item d-inline">
-            <Link to="/details" className="nav-link">
-              What We Do
-            </Link>
-          </li>
-          <li className="nav-item d-inline">
+    <div className="container-fluid">
+      <a className="navbar-brand" href="/">
+        <img src="./logo.png" alt="Logo" className="navbar-logo" style={{ width: '70px', height: 'auto' }} />
+      </a>
+      {/* <a href="tel:+3473927031" className="mr-auto"><strong>For Immediate Assistance Call 3473927031</strong></a> */}
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul className="navbar-nav">
+          <li className="nav-item">
             <Link to="/about" className="nav-link">
               Who We Are
             </Link>
           </li>
-          <li className="nav-item d-inline">
+          <li className="nav-item">
+            <Link to="/details" className="nav-link">
+              What We Do
+            </Link>
+          </li>
+          <li className="nav-item">
             <Link to="/contact" className="nav-link">
               Contact Us
             </Link>
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+  
+
+
   );
 };
 

@@ -5,25 +5,25 @@ const LocationList = (props) => {
     <div>
       <h2 className="text-center">{props.title}</h2>
       <div className="container">
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 justify-content-center">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mx-auto">
           {props.location.map((item) => (
             <div className="col" key={item._id}>
-              <div className="card mb-3" style={{ width: '18rem' }}>
+              <div className="card mb-3 mx-auto" style={{ width: '18rem',  borderColor: '#3185fc', borderWidth: '2px', borderStyle: 'solid' }}>
                 <img
                   src={item.imageUrl}
                   className="card-img-top img-fluid"
-                  style={{ height: '200px' }} // Adjust the height as needed
+                  style={{ height: '200px' }}
                   alt=""
                 />
-                <div className="card-body">
-                  <p className="card-text">{item.location}</p>
+                <div className="card-body" style={{ backgroundColor:'#f4f9e9'}}>
+                  <p className="card-text text-center"> <strong>{item.location}</strong></p>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="mb-4"></div> {/* Add space at the bottom */}
+      <div className="mb-4"></div>
     </div>
   );
 };

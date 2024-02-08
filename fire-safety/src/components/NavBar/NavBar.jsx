@@ -7,9 +7,9 @@ const NavBar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <div className="container-fluid">
       <a className="navbar-brand" href="/">
-        <img src="./logo.png" alt="Logo" className="navbar-logo" style={{ width: '70px', height: 'auto' }} />
+        <img src="./logo.png" alt="Logo" className="navbar-logo" style={{ width: '70px', height: 'auto', textDecoration:'none', textDecorationLine:'none', color:'#222725'  }} />
       </a>
-      {/* <a href="tel:+3473927031" className="mr-auto"><strong>For Immediate Assistance Call 3473927031</strong></a> */}
+      <a href="tel:+3473927031" className="mr-auto text-center"><strong>For Immediate Assistance <br /> Call 3473927031</strong></a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>

@@ -101,3 +101,20 @@
 .button-82-pushable:focus:not(:focus-visible) {
   outline: none;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up at least the height of the viewport */
+}
+
+.content {
+  flex: 1; /* Allow the content to grow to fill the available space */
+  padding-bottom: 50px; /* Add space at the bottom equal to the height of the footer */
+}
+
+.footer {
+  height: 50px; /* Set the height of the footer */
+}

@@ -5,3 +5,7 @@
 .card-background-services {
   background-color: red;
 }
+
+.card {
+  border-color: #3a405a;
+}

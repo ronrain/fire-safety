@@ -14,7 +14,7 @@ const Home = ({ serviceData, locationData }) => {
           </p>
           <p className='lead'>All of our Fire Guards are FDNY certified. Our fire guards can provide assistance for Impairments (F-01), Shelters (F-02), Temporary Assembly (F-04), Fire Safety Managers (S-56) and Temporary Heat (S-92). We have worked for corporate buildings, venues construction sites and many more. Whatever you need, we can provide you with the highest level of service.</p>
         <div className="col-lg-4">
-          <img src="/fire-safety.png" alt="Fire Safety" className="img-fluid mt-5" />
+          <img src="/fire-safety.png" alt="Fire Safety" className="img-fluid mt-5" style={{width: '20px'}}/>
           <p className="text-center">Contact us for a consultation:</p>
           <p className="text-center"><strong>Phone:</strong> +1 (347) 392-7031</p>
           <p className="text-center"><strong>Email:</strong> info@osha2020.com</p>

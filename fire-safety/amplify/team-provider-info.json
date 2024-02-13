@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-firesafety-dev-85744-authRole",
+      "UnauthRoleArn": "arn:aws:iam::654654335375:role/amplify-firesafety-dev-85744-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::654654335375:role/amplify-firesafety-dev-85744-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-firesafety-dev-85744-deployment",
+      "UnauthRoleName": "amplify-firesafety-dev-85744-unauthRole",
+      "StackName": "amplify-firesafety-dev-85744",
+      "StackId": "arn:aws:cloudformation:us-east-1:654654335375:stack/amplify-firesafety-dev-85744/dd6b2690-ca77-11ee-8327-12c63c420d3d",
+      "AmplifyAppId": "d1jo1vhnvmnikk"
+    }
+  }
+}
